@@ -15,7 +15,8 @@
             padding: .6rem;
             transition: 0.3s;
             &:hover {
-                background-color: $color-primary;
+                border-color: transparent;
+                background-color: $color-link-hover;
                 color: $color-white;
             }
         }

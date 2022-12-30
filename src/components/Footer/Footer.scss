@@ -1,0 +1,15 @@
+@import "../../styles/colors";
+
+footer {
+    padding: 2rem .5rem;
+    background-color: $color-black;
+    text-align: center;
+    margin-top: 3rem;
+    p {
+        color: $color-white;
+        a {
+            color: $color-link-hover;
+            font-weight: bold;
+        }
+    }
+}

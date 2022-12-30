@@ -4,7 +4,10 @@ import { base_url } from "../../../config";
 export const getProducts = () => async (dispatch) => {
   try {
     const { data } = await axios.get(base_url);
-    console.log(data);
+    dispatch({
+      type: "GET_PRODUCTS",
+      payload: data,
+    });
   } catch (err) {
     console.log(err.message);
   }

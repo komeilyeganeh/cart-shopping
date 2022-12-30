@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { BiShoppingBag } from "react-icons/bi";
 import "./index.scss";
 
-const Header = () => {
+const Header = ({ countCart, onShowCart }) => {
     return <header className="header">
         <div className="container container-header">
             <div className="logo">
@@ -16,9 +16,9 @@ const Header = () => {
                 </ul>
             </nav>
             <div className="cart">
-                <button>
+                <button onClick={onShowCart}>
                     <BiShoppingBag size={25}/>
-                    <span>5</span>
+                    <span>{ countCart }</span>
                 </button>
             </div>
         </div>
