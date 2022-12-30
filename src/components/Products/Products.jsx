@@ -13,7 +13,7 @@ const Products = ({ data, addToCart }) => {
               <Link to="/"><img src={product.image} alt="product" /></Link>
               <div className="product-info">
                 <Link to="/"><p>
-                  <EllipsisText text={product.title} length="25" />
+                  <EllipsisText text={product.title} length={25} />
                 </p></Link>
                 <div>
                   <span className="product-price">$ {product.price}</span>

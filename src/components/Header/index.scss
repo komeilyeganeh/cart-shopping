@@ -1,6 +1,7 @@
 @import "../../styles/colors";
 
 .header {
+  width: 100%;
   position: fixed;
   top: 0;
   left: 50%;
@@ -25,34 +26,8 @@
           color: $color-black;
           font-weight: bold;
         }
-      }
-    }
-    .navbar {
-      ul {
-        display: flex;
-        column-gap: 40px;
-        li {
-          a {
-            display: inline-block;
-            color: $color-header;
-            padding: 1.2rem 0.8rem;
-            font-weight: bold;
-            position: relative;
-            &::after {
-              position: absolute;
-              content: "";
-              width: 100%;
-              height: 0;
-              border-radius: 10px 10px 0 0;
-              background-color: $color-link-hover;
-              left: 0;
-              bottom: 0;
-              transition: 0.1s;
-            }
-            &:hover::after {
-              height: 3px;
-            }
-          }
+        @media screen and (max-width: 578px) {
+          font-size: 1rem;
         }
       }
     }
@@ -72,6 +47,9 @@
                 background-color: $color-header;
                 line-height: 12px;
                 color: $color-white;
+                @media screen and (max-width: 578px) {
+                  font-size: .9rem;
+                }
             }
         }
     }

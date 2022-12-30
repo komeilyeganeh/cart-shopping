@@ -11,6 +11,8 @@
 .modal-overlay {
     position: fixed;
     width: 40%;
+    max-height: 95vh;
+    overflow-y: auto;
     background-color: $color-white;
     top: 50%;
     left: 50%;
@@ -18,4 +20,10 @@
     border-radius: 20px;
     padding: 1rem;
     z-index: 20000;
+    @media screen and (max-width: 1200px) {
+        width: 70%;
+    }
+    @media screen and (max-width: 670px) {
+        width: 90%;
+    }
 }
