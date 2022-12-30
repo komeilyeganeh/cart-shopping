@@ -54,11 +54,12 @@
         & > p {
           font-size: 1rem;
           font-weight: bold;
+          color: #666;
         }
         & > span {
           font-size: 1.1rem;
           font-weight: bold;
-          color: $color-link-hover;
+          color: $color-text;
         }
         @media screen and (max-width: 400px) {
           width: 100%;
@@ -80,7 +81,7 @@
         column-gap: 10px;
         & > button {
           font-size: 1.1rem;
-          background-color: $color-link-hover;
+          background-color: $color-button;
           width: 25px;
           color: $color-white;
           border-radius: 2px;
@@ -100,7 +101,7 @@
     font-size: 1.1rem;
     font-weight: bold;
     & > span {
-      color: $color-link-hover;
+      color: $color-text;
     }
   }
 }

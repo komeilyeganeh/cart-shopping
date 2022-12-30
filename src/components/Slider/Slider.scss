@@ -13,7 +13,7 @@
       row-gap: 20px;
       & > h2 {
         font-size: 5vw;
-        color: $color-primary;
+        color: $color-text;
       }
       & > p {
         font-size: 1.3vw;
@@ -21,7 +21,7 @@
       }
       & > h4 {
         font-size: 3.5vw;
-        color: $color-primary;
+        color: $color-text;
         span {
           display: inline-block;
           font-weight: bold;
@@ -33,12 +33,12 @@
   }
 }
 .control-next::before {
-    border-left: 8px solid $color-primary !important;
+    border-left: 8px solid $color-text !important;
     border-top: 8px solid transparent !important;
     border-bottom: 8px solid transparent !important;
 }
 .control-prev::before {
-    border-right: 8px solid $color-primary !important;
+    border-right: 8px solid $color-text !important;
     border-top: 8px solid transparent !important;
     border-bottom: 8px solid transparent !important;
 }
