@@ -18,7 +18,7 @@
     width: 5px;
   }
   &::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, $color-white, $color-black);
+    background: linear-gradient(to bottom, $color-white, $color-black, $color-white);
   }
   .cart-item {
     height: 120px;

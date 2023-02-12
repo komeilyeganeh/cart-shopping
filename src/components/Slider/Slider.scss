@@ -1,5 +1,11 @@
 @import "../../styles/colors";
 
+.slider-wrapper {
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+}
+
 .slide {
   div {
     position: relative;

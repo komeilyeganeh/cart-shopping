@@ -5,7 +5,7 @@ import slider2 from "../../assets/slider/slide-2.jpg";
 import "./Slider.scss";
 
 const Slider = () => {
-    return <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} autoPlay={true} axis="vertical" verticalSwipe="natural">
+    return <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} autoPlay={true} axis="vertical" verticalSwipe="natural" className='slider-wrapper'>
         <div>
             <img src={slider1} alt="slider"/>
             <div>
